@@ -28,6 +28,7 @@ This repository documents the process and structure involved in migrating fund m
 
 ## Structure Chart
 Included in this repository is a structure chart that visually represents the table relationships within the database, highlighting the one-to-many and many-to-many relationships.
+![MetaData Migration View](https://github.com/derickkan3356/FundMetadataMigrationSQL/blob/main/MetaData%20Migration%20View.png)
 
 ## Challenges and Solutions
 One significant challenge faced was implementing a cross-table unique constraint to ensure investor codes were unique within the same client but across three different tables. The solution involved creating a SQL Server trigger to enforce this constraint upon insert and update operations.
